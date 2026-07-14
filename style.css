@@ -1,0 +1,142 @@
+/* Cozy Loops Co. */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#FFF9F5;
+color:#6B584C;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#F8D8E6;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+color:#6B584C;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#D88CA8;
+}
+
+.icons{
+font-size:24px;
+}
+
+.hero{
+text-align:center;
+padding:90px 20px;
+background:#FDF2EC;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:650px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#E8D9C8;
+color:#6B584C;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#F8D8E6;
+transform:translateY(-3px);
+}
+
+.categories{
+padding:70px 8%;
+}
+
+.categories h2{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:25px;
+text-align:center;
+font-size:40px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card h3{
+font-size:20px;
+margin-top:15px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#F8D8E6;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
