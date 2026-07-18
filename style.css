@@ -534,3 +534,24 @@ font-size:15px;
 font-weight:500;
 letter-spacing:.5px;
 }
+/* Hero Stats */
+
+.hero-stats{
+display:flex;
+gap:40px;
+margin-top:45px;
+flex-wrap:wrap;
+}
+
+.hero-stats h3{
+font-family:'Playfair Display',serif;
+font-size:28px;
+color:#d48aa1;
+margin-bottom:5px;
+}
+
+.hero-stats p{
+font-size:15px;
+color:#8d817b;
+margin:0;
+}
