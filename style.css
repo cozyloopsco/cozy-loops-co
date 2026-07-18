@@ -329,4 +329,20 @@ color:#d48aa1;
 
 .gallery-grid{
 display:grid;
-grid-template-columns:repeat(auto
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+{
+
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+
+
