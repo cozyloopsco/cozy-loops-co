@@ -3,52 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Cozy Loops Co.</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
 <div class="logo">
-🧶 Cozy Loops Co.
+🧶
+<div>
+<h2>Cozy Loops Co.</h2>
+<p>Handmade Crochet • Flowers • Coasters • Gifts</p>
+</div>
 </div>
 
 <nav>
 
-<a href="#">Home</a>
-<a href="#">Shop</a>
-<a href="#">Collections</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#shop">Shop</a>
+<a href="#story">Our Story</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 
 </nav>
 
 <div class="icons">
-🤍 🛒
+🤍
+🛒
 </div>
 
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
-<h1>Handmade with Love,<br>One Stitch at a Time</h1>
+<div class="hero-text">
+
+<h1>
+Handmade with Love,<br>
+One Stitch at a Time
+</h1>
 
 <p>
-Beautiful crochet creations designed to bring warmth and joy to your everyday life.
+Discover handcrafted crochet flowers, cozy coasters, plushies and thoughtful gifts made with care. Every stitch is designed to bring warmth, beauty and comfort to your everyday moments.
 </p>
 
-<a href="#" class="btn">
-Shop Now
-</a>
+<a href="#shop" class="btn">Shop Now</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=700" alt="Crochet">
+
+</div>
 
 </section>
 
@@ -59,8 +73,13 @@ Shop Now
 <div class="category-grid">
 
 <div class="card">
-👜
-<h3>Bags</h3>
+🌷
+<h3>Flowers</h3>
+</div>
+
+<div class="card">
+☕
+<h3>Coasters</h3>
 </div>
 
 <div class="card">
@@ -69,18 +88,195 @@ Shop Now
 </div>
 
 <div class="card">
-🌷
-<h3>Flowers</h3>
+🎀
+<h3>Keychains</h3>
 </div>
 
 <div class="card">
-🎀
-<h3>Keychains</h3>
+👜
+<h3>Coming Soon</h3>
+<p>Bags</p>
 </div>
 
 </div>
 
 </section>
+
+<section id="shop" class="products">
+
+<h2>Featured Collection</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500">
+<h3>Daisy Coaster Set</h3>
+<p>Rs. 1,200</p>
+<button>Shop Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=500">
+<h3>Tulip Bouquet</h3>
+<p>Rs. 2,000</p>
+<button>Shop Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500">
+<h3>Sunflower Coaster</h3>
+<p>Rs. 850</p>
+<button>Shop Now</button>
+</div>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500" alt="Lavender Bouquet">
+<h3>Lavender Bouquet</h3>
+<p>Rs. 2,200</p>
+<button>Shop Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="Bee Plushie">
+<h3>Bee Plushie</h3>
+<p>Rs. 1,800</p>
+<button>Shop Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500" alt="Strawberry Keychain">
+<h3>Strawberry Keychain</h3>
+<p>Rs. 750</p>
+<button>Shop Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="story" class="story">
+
+<div class="story-image">
+<img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=700" alt="Crochet Yarn">
+</div>
+
+<div class="story-text">
+
+<h2>Our Story</h2>
+
+<p>
+Cozy Loops Co. began with a love for crochet and the joy of creating handmade pieces that bring comfort and beauty into everyday life. Every flower, coaster, plushie, and keychain is made with care, attention to detail, and high-quality yarn.
+</p>
+
+<p>
+Our goal is to create timeless handmade gifts that make every home feel a little cozier and every special moment a little more memorable.
+</p>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Why Choose Cozy Loops Co.?</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+🧶
+<h3>Handmade</h3>
+<p>Every item is carefully crocheted by hand.</p>
+</div>
+
+<div class="feature">
+💖
+<h3>Made with Love</h3>
+<p>Each stitch is crafted with patience and care.</p>
+</div>
+
+<div class="feature">
+🎁
+<h3>Perfect Gifts</h3>
+<p>Thoughtful handmade pieces for every occasion.</p>
+</div>
+
+<div class="feature">
+🌸
+<h3>Unique Designs</h3>
+<p>Inspired by cozy Pinterest aesthetics.</p>
+</div>
+
+</div>
+
+</section>
+<section class="reviews">
+
+<h2>What Our Customers Say</h2>
+
+<div class="review-grid">
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Beautiful quality and so much attention to detail. I absolutely love my crochet flowers!"</p>
+<h4>- Sarah</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"The coasters are adorable and make my coffee table look so cozy."</p>
+<h4>- Ayesha</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Perfect handmade gifts. I'll definitely order again!"</p>
+<h4>- Emma</h4>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://picsum.photos/300?random=1" alt="Gallery Image 1">
+<img src="https://picsum.photos/300?random=2" alt="Gallery Image 2">
+<img src="https://picsum.photos/300?random=3" alt="Gallery Image 3">
+<img src="https://picsum.photos/300?random=4" alt="Gallery Image 4">
+<img src="https://picsum.photos/300?random=5" alt="Gallery Image 5">
+<img src="https://picsum.photos/300?random=6" alt="Gallery Image 6">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Let's Stay Connected</h2>
+
+<p>Follow Cozy Loops Co. for new handmade creations and behind-the-scenes crochet content.</p>
+
+<div class="contact-buttons">
+<a href="#">Instagram</a>
+<a href="#">Pinterest</a>
+<a href="#">TikTok</a>
+<a href="#">WhatsApp</a>
+</div>
+
+</section>
+
+<footer>
+
+<h3>Cozy Loops Co.</h3>
+
+<p>Handmade Crochet • Flowers • Coasters • Gifts</p>
+
+<p>© 2026 Cozy Loops Co. All Rights Reserved.</p>
+
+</footer>
 
 <script src="script.js"></script>
 
