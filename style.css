@@ -465,6 +465,59 @@ font-weight:600;
 cursor:pointer;
 transition:.3s;
 }
+/* ---------- Footer ---------- */
+
+footer{
+background:#f5ece7;
+padding:70px 8% 30px;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr;
+gap:50px;
+}
+
+.footer-brand h3{
+font-family:'Playfair Display',serif;
+font-size:30px;
+margin-bottom:18px;
+color:#7f5c54;
+}
+
+.footer-container h4{
+margin-bottom:18px;
+font-size:20px;
+color:#7f5c54;
+}
+
+.footer-container a,
+.footer-container p{
+display:block;
+margin-bottom:12px;
+color:#7a6b66;
+transition:.3s;
+}
+
+.footer-container a:hover{
+color:#d48aa1;
+padding-left:6px;
+}
+
+footer hr{
+margin:45px 0 25px;
+border:none;
+border-top:1px solid #dfd1cb;
+}
+
+.footer-bottom{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:15px;
+font-size:15px;
+color:#8d817b;
+}
 
 .newsletter-form button:hover{
 background:#c98fa3;
