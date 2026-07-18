@@ -1,93 +1,144 @@
-/* Cozy Loops Co. */
+/* -----------------------------
+   Cozy Loops Co.
+   Pinterest Style Theme
+------------------------------*/
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 font-family:'Poppins',sans-serif;
-background:#FFF9F5;
-color:#6B584C;
+background:#fcf8f3;
+color:#5f4b44;
+line-height:1.7;
 }
 
-header{
+img{
+width:100%;
+display:block;
+border-radius:20px;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+section{
+padding:80px 8%;
+}
+
+/* Header */
+
+.header{
+position:sticky;
+top:0;
+z-index:1000;
+background:#fffaf7;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
-background:#F8D8E6;
-position:sticky;
-top:0;
+padding:18px 8%;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
 .logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo h2{
 font-family:'Playfair Display',serif;
-font-size:28px;
-font-weight:bold;
+font-size:30px;
+color:#8b6b61;
+}
+
+.logo p{
+font-size:12px;
+color:#aa9087;
+}
+
+nav{
+display:flex;
+gap:35px;
 }
 
 nav a{
-text-decoration:none;
-margin:0 15px;
-color:#6B584C;
 font-weight:500;
 transition:.3s;
 }
 
 nav a:hover{
-color:#D88CA8;
+color:#d68ca3;
 }
 
 .icons{
+display:flex;
+gap:18px;
 font-size:24px;
+cursor:pointer;
 }
 
+/* Hero */
+
 .hero{
-text-align:center;
-padding:90px 20px;
-background:#FDF2EC;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:60px;
+min-height:90vh;
 }
 
 .hero h1{
 font-family:'Playfair Display',serif;
-font-size:55px;
-margin-bottom:20px;
+font-size:60px;
+line-height:1.2;
+color:#7f5c54;
+margin-bottom:25px;
 }
 
 .hero p{
 font-size:18px;
-max-width:650px;
-margin:auto;
-margin-bottom:30px;
+color:#7b6d68;
+margin-bottom:35px;
+max-width:520px;
 }
 
 .btn{
 display:inline-block;
-padding:15px 35px;
-background:#E8D9C8;
-color:#6B584C;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
+background:#dca5b8;
+color:white;
+padding:16px 36px;
+border-radius:40px;
+font-weight:600;
 transition:.3s;
 }
 
 .btn:hover{
-background:#F8D8E6;
+background:#c98fa3;
 transform:translateY(-3px);
 }
 
-.categories{
-padding:70px 8%;
+.hero-image img{
+height:620px;
+object-fit:cover;
+border-radius:35px;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
+/* Categories */
 
-.categories h2{
+.categories h2,
+.products h2{
 text-align:center;
-font-size:38px;
-margin-bottom:40px;
+font-size:40px;
 font-family:'Playfair Display',serif;
+margin-bottom:50px;
+color:#7f5c54;
 }
 
 .category-grid{
@@ -97,46 +148,185 @@ gap:25px;
 }
 
 .card{
-background:white;
-padding:40px;
-border-radius:25px;
+background:#fff;
+padding:35px;
 text-align:center;
-font-size:40px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card h3{
-font-size:20px;
-margin-top:15px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+transition:.35s;
+cursor:pointer;
 }
 
 .card:hover{
 transform:translateY(-10px);
 }
 
-footer{
-padding:30px;
+.card h3{
+margin-top:15px;
+font-size:22px;
+}
+
+.card p{
+color:#8d817b;
+}
+
+/* Products */
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:35px;
+}
+
+.product{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.35s;
+}
+
+.product:hover{
+transform:translateY(-12px);
+}
+
+.product img{
+height:320px;
+object-fit:cover;
+}
+
+.product h3{
+padding:18px 20px 5px;
+font-size:24px;
+font-family:'Playfair Display',serif;
+}
+
+.product p{
+padding:0 20px 20px;
+color:#b57c91;
+font-weight:600;
+font-size:18px;
+}
+
+.product button{
+margin:0 20px 25px;
+width:calc(100% - 40px);
+padding:14px;
+border:none;
+border-radius:40px;
+background:#dca5b8;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.product button:hover{
+background:#c98fa3;
+}
+
+/* Our Story */
+
+.story{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.story img{
+height:520px;
+object-fit:cover;
+border-radius:30px;
+}
+
+.story h2{
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin-bottom:20px;
+color:#7f5c54;
+}
+
+.story p{
+margin-bottom:18px;
+font-size:17px;
+color:#6f625d;
+}
+
+/* Features */
+
+.features{
+background:#fff7f8;
+}
+
+.features h2{
 text-align:center;
-background:#F8D8E6;
-margin-top:60px;
+margin-bottom:45px;
+font-size:40px;
+font-family:'Playfair Display',serif;
 }
 
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-gap:15px;
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
 }
 
-.hero h1{
-font-size:38px;
+.feature{
+background:white;
+padding:35px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+transition:.3s;
 }
 
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+.feature:hover{
+transform:translateY(-8px);
 }
 
+.feature h3{
+margin:15px 0;
+font-size:22px;
 }
+/* Reviews */
+
+.reviews{
+background:#fffaf7;
+}
+
+.reviews h2,
+.gallery h2,
+.contact h2{
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin-bottom:50px;
+color:#7f5c54;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.review{
+background:white;
+padding:35px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.review h4{
+margin-top:20px;
+color:#d48aa1;
+}
+
+/* Gallery */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto
