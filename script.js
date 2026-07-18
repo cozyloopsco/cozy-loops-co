@@ -100,3 +100,22 @@ topButton.addEventListener("click", () => {
     });
 
 });
+// Newsletter Form
+const newsletterForm = document.querySelector(".newsletter-form");
+
+if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const email = this.querySelector("input").value.trim();
+
+        if (email === "") {
+            alert("Please enter your email address.");
+            return;
+        }
+
+        alert("🌸 Thank you for joining the Cozy Club!");
+
+        this.reset();
+    });
+}
