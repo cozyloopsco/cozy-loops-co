@@ -344,5 +344,70 @@ opacity:1;
 transform:translateY(0);
 }
 
+/* Newsletter */
 
+.newsletter{
+padding:90px 8%;
+background:#fff6f4;
+}
 
+.newsletter-content{
+max-width:800px;
+margin:auto;
+text-align:center;
+background:white;
+padding:60px 40px;
+border-radius:30px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.newsletter h2{
+font-family:'Playfair Display',serif;
+font-size:42px;
+color:#7f5c54;
+margin-bottom:20px;
+}
+
+.newsletter p{
+font-size:18px;
+color:#7a6b66;
+margin-bottom:35px;
+line-height:1.8;
+}
+
+.newsletter-form{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.newsletter-form input{
+padding:16px 20px;
+width:320px;
+border:2px solid #f0d9df;
+border-radius:40px;
+font-size:16px;
+outline:none;
+}
+
+.newsletter-form input:focus{
+border-color:#dca5b8;
+}
+
+.newsletter-form button{
+padding:16px 30px;
+border:none;
+border-radius:40px;
+background:#dca5b8;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.newsletter-form button:hover{
+background:#c98fa3;
+transform:translateY(-3px);
+}
